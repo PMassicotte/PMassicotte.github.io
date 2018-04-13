@@ -5,12 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Calculating daylight in R</title>
-  <meta property="og:title" content="Calculating daylight in R" />
-  <meta name="twitter:title" content="Calculating daylight in R" />
-  <meta name="description" content="A little bit more than a year ago I moved in Denmark. So far, the last year has been quite fun and I have been working on interesting projects. The most difficult part has been the winter since the daylight is very short between November and February. I was curious to see what was the difference in daylight between my home country (Canada) and Denmark. This is a short post showing how to calculate daylight based on the latitude position and the day of the year (DOY).">
-  <meta property="og:description" content="A little bit more than a year ago I moved in Denmark. So far, the last year has been quite fun and I have been working on interesting projects. The most difficult part has been the winter since the daylight is very short between November and February. I was curious to see what was the difference in daylight between my home country (Canada) and Denmark. This is a short post showing how to calculate daylight based on the latitude position and the day of the year (DOY).">
-  <meta name="twitter:description" content="A little bit more than a year ago I moved in Denmark. So far, the last year has been quite fun and I have been working on interesting projects. The most difficult part has been the winter since the …">
+  <title>Beer</title>
+  <meta property="og:title" content="Beer" />
+  <meta name="twitter:title" content="Beer" />
   <meta name="author" content="Philippe Massicotte"/>
   <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="/img/avatar-icon.png" />
@@ -18,12 +15,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@philmassicotte" />
   <meta name="twitter:creator" content="@philmassicotte" />
-  <meta property="og:url" content="/post/2015-11-06-daylight/" />
+  <meta property="og:url" content="/post/beer/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Another R blog" />
 
   <meta name="generator" content="Hugo 0.34" />
-  <link rel="canonical" href="/post/2015-11-06-daylight/" />
+  <link rel="canonical" href="/post/beer/" />
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Another R blog">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -116,12 +113,6 @@
         
           
             <li>
-              <a title="Publications" href="/page/publication/">Publications</a>
-            </li>
-          
-        
-          
-            <li>
               <a title="Tags" href="/tags">Tags</a>
             </li>
           
@@ -167,17 +158,17 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Calculating daylight in R</h1>
+              <h1>Beer</h1>
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on January 1, 0001
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on April 13, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 2 minutes (263 words)
+  <i class="fa fa-clock-o"></i> 0 minutes (0 words)
   
   
 </span>
@@ -197,43 +188,7 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>A little bit more than a year ago I moved in Denmark. So far, the last year has been quite fun and I have been working on interesting projects. The most difficult part has been the winter since the daylight is very short between November and February. I was curious to see what was the difference in daylight between my home country (Canada) and Denmark. This is a short post showing how to calculate daylight based on the latitude position and the day of the year (DOY). The formula used can be found <a href="http://stackoverflow.com/questions/6372802/calculate-daylight-hours-based-on-gegraphical-coordinates">here</a>.</p>
-<pre class="r"><code>dl &lt;- function(doy, latitude) {
-
-  p &lt;- asin(0.39795 * cos(0.2163108 + 2 * atan(0.9671396 * tan(0.00860 * (doy - 186)))))
-
-  d &lt;- 24 - (24 / pi) * acos((sin(0.8333 * pi / 180) + sin(latitude * pi / 180) * sin(p)) / 
-    cos(latitude * pi / 180) * cos(p))
-
-  return(d)
-}
-
-doy &lt;- 1:365
-
-mtl &lt;- dl(doy = doy, latitude = 45.501689) ## Montreal latitude
-cph &lt;- dl(doy = doy, latitude = 55.676097) ## Copenhagen latitude
-
-df &lt;- data.frame(mtl = mtl, cph = cph, date = as.Date(doy, origin = &quot;2015-01-01&quot;))</code></pre>
-<pre class="r"><code>library(ggplot2)
-
-ggplot(df, aes(x = date)) +
-  geom_line(aes(y = mtl, color = &quot;Montreal&quot;)) +
-  geom_line(aes(y = cph, color = &quot;Copenhagen&quot;)) +
-  labs(color = &quot;City&quot;) +
-  theme_bw() +
-  xlab(&quot;Months&quot;) +
-  ylab(&quot;Daylight (hours)&quot;) +
-  geom_vline(xintercept = as.numeric(Sys.Date()), lty = 2, lwd = 0.25)</code></pre>
-<p><img src="/post/2015-11-06-daylight_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>Now lets calculate the daylight difference between the two cities.</p>
-<pre class="r"><code>ggplot(df, aes(x = date, y = cph - mtl)) +
-  geom_line() +
-  xlab(&quot;Months&quot;) +
-  ylab(&quot;Daylight difference&quot;) +
-  theme_bw() +
-  geom_vline(xintercept = as.numeric(Sys.Date()), lty = 2, lwd = 0.25)</code></pre>
-<p><img src="/post/2015-11-06-daylight_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Voilà!</p>
+        <p><img src="/post/2018-04-13-beer_files/figure-html/setup-1.png" width="672" /></p>
 
         
             <hr/>
@@ -243,7 +198,7 @@ ggplot(df, aes(x = date)) +
 
 
 <li>
-    <a href="//twitter.com/share?url=%2fpost%2f2015-11-06-daylight%2f&amp;text=Calculating%20daylight%20in%20R&amp;via=philmassicotte"
+    <a href="//twitter.com/share?url=%2fpost%2fbeer%2f&amp;text=Beer&amp;via=philmassicotte"
        target="_blank" alt="" title="Share on Twitter">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -254,7 +209,7 @@ ggplot(df, aes(x = date)) +
 
 
 <li>
-    <a href="//plus.google.com/share?url=%2fpost%2f2015-11-06-daylight%2f" target="_blank" title="Share on Google Plus">
+    <a href="//plus.google.com/share?url=%2fpost%2fbeer%2f" target="_blank" title="Share on Google Plus">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -264,7 +219,7 @@ ggplot(df, aes(x = date)) +
 
 
 <li>
-    <a href="//www.facebook.com/sharer/sharer.php?u=%2fpost%2f2015-11-06-daylight%2f" target="_blank" title="Share on Facebook">
+    <a href="//www.facebook.com/sharer/sharer.php?u=%2fpost%2fbeer%2f" target="_blank" title="Share on Facebook">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -274,7 +229,7 @@ ggplot(df, aes(x = date)) +
 
 
 <li>
-    <a href="//reddit.com/submit?url=%2fpost%2f2015-11-06-daylight%2f&amp;title=Calculating%20daylight%20in%20R" target="_blank" title="Share on Reddit">
+    <a href="//reddit.com/submit?url=%2fpost%2fbeer%2f&amp;title=Beer" target="_blank" title="Share on Reddit">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
@@ -284,7 +239,7 @@ ggplot(df, aes(x = date)) +
 
 
 <li>
-    <a href="//www.linkedin.com/shareArticle?url=%2fpost%2f2015-11-06-daylight%2f&amp;title=Calculating%20daylight%20in%20R" target="_blank"
+    <a href="//www.linkedin.com/shareArticle?url=%2fpost%2fbeer%2f&amp;title=Beer" target="_blank"
        title="Share on LinkedIn">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -295,7 +250,7 @@ ggplot(df, aes(x = date)) +
 
 
 <li>
-    <a href="//www.stumbleupon.com/submit?url=%2fpost%2f2015-11-06-daylight%2f&amp;title=Calculating%20daylight%20in%20R" target="_blank"
+    <a href="//www.stumbleupon.com/submit?url=%2fpost%2fbeer%2f&amp;title=Beer" target="_blank"
        title="Share on StumbleUpon">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -306,7 +261,7 @@ ggplot(df, aes(x = date)) +
 
 
 <li>
-    <a href="//www.pinterest.com/pin/create/button/?url=%2fpost%2f2015-11-06-daylight%2f&amp;description=Calculating%20daylight%20in%20R" target="_blank"
+    <a href="//www.pinterest.com/pin/create/button/?url=%2fpost%2fbeer%2f&amp;description=Beer" target="_blank"
        title="Share on Pinterest">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -324,7 +279,7 @@ ggplot(df, aes(x = date)) +
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="/post/2016-11-18-updating-rstudio/" data-toggle="tooltip" data-placement="top" title="Installing latest version of RStudio from R">&larr; Previous Post</a>
+              <a href="/post/2015-11-06-daylight/" data-toggle="tooltip" data-placement="top" title="Calculating daylight in R">&larr; Previous Post</a>
             </li>
           
           
@@ -408,7 +363,7 @@ ggplot(df, aes(x = date)) +
           
 
           &nbsp;&bull;&nbsp;
-          0001
+          2018
 
           
             &nbsp;&bull;&nbsp;

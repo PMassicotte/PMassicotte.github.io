@@ -1,0 +1,31 @@
+---
+title: Beer
+author: ''
+date: '2018-04-13'
+slug: beer
+categories: []
+tags: []
+---
+
+```{r setup, echo=FALSE, message=FALSE, fig.height=20}
+library(extrafont)
+library(tidyverse)
+
+## Set default ggplot2 font size and font familly
+loadfonts(quiet = TRUE)
+theme_set(theme_bw(base_size = 10, base_family = "IBM Plex Sans"))
+
+df <- read_csv("https://raw.githubusercontent.com/sinanuozdemir/principles_of_data_science/master/data/chapter_2/drinks.csv")
+
+df %>% 
+  ggplot(aes(x = reorder(country, total_litres_of_pure_alcohol), y = total_litres_of_pure_alcohol)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  ylab("Litres d'alchool par habitant") +
+  xlab("Pays") +
+  scale_y_continuous(expand = c(0, 0.05), breaks = seq(0, 20, by = 2)) +
+  labs(title = "Quantité d'alchool par habitant par pays") +
+  labs(subtitle = "Source: http://apps.who.int/gho/data/view.main.52160")
+
+```
+

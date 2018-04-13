@@ -9,6 +9,7 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 publishDir = "."
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #pygmentsUseClassic = true
 #pygmentOptions = "linenos=inline"
 #disqusShortname = "XXX"
@@ -73,6 +74,11 @@ publishDir = "."
 [[menu.main]]
     name = "About"
     url = "page/about/"
+    weight = 3
+    
+[[menu.main]]
+    name = "Publications"
+    url = "page/publication/"
     weight = 3
 
 [[menu.main]]
