@@ -3,70 +3,70 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pmassicotte.github.io/page/about/</loc>
+    <loc>/page/about/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/</loc>
+    <loc>/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2015-11-06-daylight/</loc>
+    <loc>/post/2015-11-06-daylight/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-11-18-updating-rstudio/</loc>
+    <loc>/post/2016-11-18-updating-rstudio/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2015-11-05-eemr/</loc>
+    <loc>/post/2015-11-05-eemr/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/page/</loc>
+    <loc>/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/</loc>
+    <loc>/post/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-03-07-not_in/</loc>
+    <loc>/post/2016-03-07-not_in/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/tags/r/</loc>
+    <loc>/tags/r/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/tags/r-101/</loc>
+    <loc>/tags/r-101/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2015-11-13-r-101/</loc>
+    <loc>/post/2015-11-13-r-101/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-08-25-olympics2016/</loc>
+    <loc>/post/2016-08-25-olympics2016/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-05-02-eemr-0.1.3/</loc>
+    <loc>/post/2016-05-02-eemr-0.1.3/</loc>
   </url>
   
 </urlset>
