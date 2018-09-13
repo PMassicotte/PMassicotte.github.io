@@ -8,7 +8,7 @@ As a *numerical ecologsist*, the [R statistical computing language](https://www.
 
 ## Current research
 
-I am currently working as a research associate at the [Takuvik Joint International Laboratory](http://www.takuvik.ulaval.ca/) under the supervision of [Dr. Marcel Babin](http://www.takuvik.ulaval.ca/team/marcel_babin.php).
+I amm currently working as a research associate at the [Takuvik Joint International Laboratory](http://www.takuvik.ulaval.ca/) under the supervision of [Dr. Marcel Babin](http://www.takuvik.ulaval.ca/team/marcel_babin.php).
 
 Some researches I am currently working on:
 
