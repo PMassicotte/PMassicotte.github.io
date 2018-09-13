@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Another R blog</title>
-    <link>/page/</link>
+    <link>https://pmassicotte.github.io/page/</link>
     <description>Recent content in Pages on Another R blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pmassicotte@hotmail.com (Philippe Massicotte)</managingEditor>
     <webMaster>pmassicotte@hotmail.com (Philippe Massicotte)</webMaster>
     
-	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pmassicotte.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/page/publication/</link>
+      <link>https://pmassicotte.github.io/page/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
-      <guid>/page/publication/</guid>
+      <guid>https://pmassicotte.github.io/page/publication/</guid>
       <description>[1] E. Asmala, L. Haraguchi, H. H. Jakobsen, P. Massicotte and J. Carstensen. “Nutrient availability as major driver of phytoplankton-derived dissolved organic matter transformation in coastal environment”. In: Biogeochemistry 137.1-2 (Jan. 2018), pp. 93-104. ISSN: 0168-2563. DOI: 10.1007/s10533-017-0403-0.
 [2] L. P. M. Brandão, L. S. Brighenti, P. A. Staehr, E. Asmala, P. Massicotte, D. Tonetta, F. A. R. Barbosa, D. Pujoni and J. F. Bezerra-Neto. “Distinctive effects of allochthonous and autochthonous organic matter on CDOM spectra in a tropical lake”.</description>
     </item>
     
     <item>
       <title>About me</title>
-      <link>/page/about/</link>
+      <link>https://pmassicotte.github.io/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
-      <guid>/page/about/</guid>
+      <guid>https://pmassicotte.github.io/page/about/</guid>
       <description>As a numerical ecologsist, the R statistical computing language is an important part of my daily work flow. I mainly use R for environmental modeling and data manipulation. In this not-so-serious blog I will present my recent R work as well as basic tips and tricks about R.
 Current research I am currently working as a research associate at the Takuvik Joint International Laboratory under the supervision of Dr. Marcel Babin.</description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>/page/publication/</link>
+      <link>https://pmassicotte.github.io/page/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
-      <guid>/page/publication/</guid>
+      <guid>https://pmassicotte.github.io/page/publication/</guid>
       <description>[1] E. Asmala, L. Haraguchi, H. H. Jakobsen, P. Massicotte and J. Carstensen. “Nutrient availability as major driver of phytoplankton-derived dissolved organic matter transformation in coastal environment”. In: Biogeochemistry 137.1-2 (Jan. 2018), pp. 93-104. ISSN: 0168-2563. DOI: 10.1007/s10533-017-0403-0.
 [2] L. P. M. Brandão, L. S. Brighenti, P. A. Staehr, E. Asmala, P. Massicotte, D. Tonetta, F. A. R. Barbosa, D. Pujoni and J. F. Bezerra-Neto. “Distinctive effects of allochthonous and autochthonous organic matter on CDOM spectra in a tropical lake”.</description>
     </item>

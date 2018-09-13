@@ -167,13 +167,8 @@ knitr::kable(head(medals))</code></pre>
 <h2>Plotting the data</h2>
 <p>Using <code>ggplot2</code> it is easy to plot the data. Do not forget to install the <code>ggflags</code> package from Github using <code>devtools::install_github(&quot;baptiste/ggflags&quot;)</code>.</p>
 <pre class="r"><code># devtools::install_github(&quot;baptiste/ggflags&quot;)
-library(ggplot2)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;ggplot2&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
-## 
-##     vars</code></pre>
-<pre class="r"><code>library(ggflags)
+library(ggplot2)
+library(ggflags)
 
 medals %&gt;%
   filter(Total &gt;= 10) %&gt;%
