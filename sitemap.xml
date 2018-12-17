@@ -3,99 +3,128 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pmassicotte.github.io/post/numerical-integration-in-r/</loc>
+    <loc>/post/gender-asm2018/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/numerical-integration-in-r/</loc>
     <lastmod>2018-05-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/page/publication/</loc>
+    <loc>/page/publication/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/page/about/</loc>
+    <loc>/page/about/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/</loc>
-    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2015-11-06-daylight/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pmassicotte.github.io/categories/</loc>
+    <loc>/tags/arcticnet/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-11-18-updating-rstudio/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pmassicotte.github.io/post/2015-11-05-eemr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pmassicotte.github.io/categories/mathematics/</loc>
-    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
+    <loc>/tags/asm2018/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/page/</loc>
+    <loc>/post/2015-11-06-daylight/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/</loc>
-    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/post/2016-11-18-updating-rstudio/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/page/publication/</loc>
+    <loc>/post/2015-11-05-eemr/</loc>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-03-07-not_in/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pmassicotte.github.io/tags/r/</loc>
+    <loc>/categories/mathematics/</loc>
     <lastmod>2018-05-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/categories/r/</loc>
+    <loc>/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/page/publication/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2016-03-07-not_in/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
     <lastmod>2018-05-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/tags/r-101/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pmassicotte.github.io/post/2015-11-13-r-101/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pmassicotte.github.io/tags/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2018-05-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-08-25-olympics2016/</loc>
+    <loc>/tags/r-101/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pmassicotte.github.io/post/2016-05-02-eemr-0.1.3/</loc>
+    <loc>/post/2015-11-13-r-101/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/stemwomen/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/2016-08-25-olympics2016/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/women-in-stem/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/2016-05-02-eemr-0.1.3/</loc>
   </url>
   
 </urlset>
