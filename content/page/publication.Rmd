@@ -8,7 +8,7 @@ output: md_document
 library(RefManageR)
 file <- "~/Documents/library.bib"
 # BibOptions(check.entries = FALSE)
-bib <- ReadBib(file)
+bib <- ReadBib(file, check = FALSE)
 BibOptions(
   check.entries = FALSE, style = "markdown", cite.style = "authoryear",
   bib.style = "numeric"

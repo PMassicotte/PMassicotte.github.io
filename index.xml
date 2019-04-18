@@ -38,8 +38,7 @@ We first define the equation in the form of a function since it is a requirement
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/page/publication/</guid>
-      <description>[1] E. Asmala, L. Haraguchi, H. H. Jakobsen, P. Massicotte and J. Carstensen. “Nutrient availability as major driver of phytoplankton-derived dissolved organic matter transformation in coastal environment”. In: Biogeochemistry 137.1-2 (Jan. 2018), pp. 93-104. ISSN: 0168-2563. DOI: 10.1007/s10533-017-0403-0.
-[2] L. P. M. Brandão, L. S. Brighenti, P. A. Staehr, E. Asmala, P. Massicotte, D. Tonetta, F. A. R. Barbosa, D. Pujoni and J. F. Bezerra-Neto. “Distinctive effects of allochthonous and autochthonous organic matter on CDOM spectra in a tropical lake”.</description>
+      <description>[\[1\]](#cite-Asmala2018) E. Asmala, L. Haraguchi, H. H. Jakobsen, P. Massicotte and J. Carstensen. “Nutrient availability as major driver of phytoplankton-derived dissolved organic matter transformation in coastal environment”. In: *Biogeochemistry* 137.1-2 (Jan. 2018), pp. 93-104. ISSN: 0168-2563. DOI: [10.1007/s10533-017-0403-0](https://doi.org/10.1007/s10533-017-0403-0). [\[2\]](#cite-Brandao2018) L. P. M. Brandão, L. S. Brighenti, P. A. Staehr, E. Asmala, P. Massicotte, D. Tonetta, F. A. R. Barbosa, D. Pujoni and J. F. Bezerra-Neto. “Distinctive effects of allochthonous and autochthonous organic matter on CDOM spectra in a tropical lake”.</description>
     </item>
     
     <item>
@@ -67,7 +66,7 @@ Current research I am currently working as a research associate at the Takuvik J
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/post/2016-11-18-updating-rstudio/</guid>
-      <description>If you are like me, chances are that you update RStudio on a daily basis. Here is a small R script that automatically download and install the latest version of RStudio on your computer. Note this is for ubuntu64 based systems, but this can be easily modified for Windows or Mac platforms.
+      <description> If you are like me, chances are that you update RStudio on a daily basis. Here is a small R script that automatically download and install the latest version of RStudio on your computer. Note this is for ubuntu64 based systems, but this can be easily modified for Windows or Mac platforms.
 rstudio_ubuntu_daily_url &amp;lt;- &amp;quot;https://www.rstudio.org/download/daily/desktop/ubuntu64/&amp;quot; r &amp;lt;- readLines(curl::curl(rstudio_ubuntu_daily_url)) file &amp;lt;- regmatches(r, regexpr(&amp;quot;https\\S+?deb&amp;quot;, r))[1] file destfile &amp;lt;- paste(&amp;quot;/tmp/&amp;quot;, basename(file)) download.file(file, destfile = destfile) cmd &amp;lt;- sprintf(&amp;quot;dpkg -i %s&amp;quot;, destfile) system(cmd) </description>
     </item>
     
@@ -82,13 +81,25 @@ library(eemR) ls(&amp;quot;package:eemR&amp;quot;) ## [1] &amp;quot;absorbance&a
     </item>
     
     <item>
+      <title>Presentations</title>
+      <link>/page/presentations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
+      <guid>/page/presentations/</guid>
+      <description> List of my most recent presentations 2019  R à Québec 2019
+ Green Edge 2019
+ Numerical ecology (course in Denmark)
+  </description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>/page/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/page/publication/</guid>
-      <description>[1] E. Asmala, L. Haraguchi, H. H. Jakobsen, P. Massicotte and J. Carstensen. “Nutrient availability as major driver of phytoplankton-derived dissolved organic matter transformation in coastal environment”. In: Biogeochemistry 137.1-2 (Jan. 2018), pp. 93-104. ISSN: 0168-2563. DOI: 10.1007/s10533-017-0403-0.
-[2] E. Asmala, L. Haraguchi, S. Markager, P. Massicotte, B. Riemann, P. A. Staehr and J. Carstensen. “Eutrophication Leads to Accumulation of Recalcitrant Autochthonous Organic Matter in Coastal Environment”. In: Global Biogeochem. Cycles (Nov.</description>
+      <description>[1] E. Asmala, L. Haraguchi, H. H. Jakobsen, P. Massicotte, and J. Carstensen. “Nutrient availability as major driver of phytoplankton-derived dissolved organic matter transformation in coastal environment”. In: Biogeochemistry 137.1-2 (Jan. 2018), pp. 93-104. ISSN: 0168-2563. DOI: 10.1007/s10533-017-0403-0.
+[2] E. Asmala, L. Haraguchi, S. Markager, P. Massicotte, B. Riemann, P. A. Staehr, and J. Carstensen. “Eutrophication Leads to Accumulation of Recalcitrant Autochthonous Organic Matter in Coastal Environment”. In: Global Biogeochem.</description>
     </item>
     
     <item>
@@ -109,16 +120,6 @@ c(&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;) %in% letters[1:5] ## [1] TRUE TR
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/post/2015-11-13-r-101/</guid>
       <description>Sometimes when you open a data file (lets say a .csv), variables will be recognized as factor whereas it should be numeric. It is therefore tempting to simply convert the variable to numeric using as.numeric(). Big mistake! If you use directly as.numeric() on a variable of the type factor, R will returns the levels of the factor rather the actual values. To overcome this hassle, you should first convert the variable into a string with as.</description>
-    </item>
-    
-    <item>
-      <title>Visualizating olympics medals in R</title>
-      <link>/post/2016-08-25-olympics2016/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
-      <guid>/post/2016-08-25-olympics2016/</guid>
-      <description>Recently I have been more interested to perform web scraping to extract public data to perform data analysis. There are probably many R packages out there that do a good job at such task, but I found out that the rvest was among the most popular ones. Hence I decided to give it a try.
-In this post, I’m using the rvest library to visualize how many medals were obtained by each country during the summer Olympics 2016.</description>
     </item>
     
     <item>

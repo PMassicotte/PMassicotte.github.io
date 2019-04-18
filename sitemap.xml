@@ -3,21 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/asm2018/</loc>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/gender-asm2018/</loc>
     <lastmod>2018-12-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/numerical-integration-in-r/</loc>
-    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/page/publication/</loc>
-  </url>
-  
-  <url>
-    <loc>/page/about/</loc>
   </url>
   
   <url>
@@ -33,72 +26,9 @@
   </url>
   
   <url>
-    <loc>/tags/asm2018/</loc>
-    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/2015-11-06-daylight/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/2016-11-18-updating-rstudio/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2015-11-05-eemr/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/mathematics/</loc>
-    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/page/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2018-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/page/publication/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2016-03-07-not_in/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r-101/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/2015-11-13-r-101/</loc>
   </url>
   
   <url>
@@ -114,13 +44,85 @@
   </url>
   
   <url>
-    <loc>/post/2016-08-25-olympics2016/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/women-in-stem/</loc>
     <lastmod>2018-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/mathematics/</loc>
+    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/numerical-integration-in-r/</loc>
+    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2018-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/page/publication/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2015-11-06-daylight/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2016-11-18-updating-rstudio/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2015-11-05-eemr/</loc>
+  </url>
+  
+  <url>
+    <loc>/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/page/presentations/</loc>
+  </url>
+  
+  <url>
+    <loc>/page/publication/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2016-03-07-not_in/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/r-101/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/2015-11-13-r-101/</loc>
   </url>
   
   <url>

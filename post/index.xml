@@ -47,7 +47,7 @@ We first define the equation in the form of a function since it is a requirement
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/post/2016-11-18-updating-rstudio/</guid>
-      <description>If you are like me, chances are that you update RStudio on a daily basis. Here is a small R script that automatically download and install the latest version of RStudio on your computer. Note this is for ubuntu64 based systems, but this can be easily modified for Windows or Mac platforms.
+      <description> If you are like me, chances are that you update RStudio on a daily basis. Here is a small R script that automatically download and install the latest version of RStudio on your computer. Note this is for ubuntu64 based systems, but this can be easily modified for Windows or Mac platforms.
 rstudio_ubuntu_daily_url &amp;lt;- &amp;quot;https://www.rstudio.org/download/daily/desktop/ubuntu64/&amp;quot; r &amp;lt;- readLines(curl::curl(rstudio_ubuntu_daily_url)) file &amp;lt;- regmatches(r, regexpr(&amp;quot;https\\S+?deb&amp;quot;, r))[1] file destfile &amp;lt;- paste(&amp;quot;/tmp/&amp;quot;, basename(file)) download.file(file, destfile = destfile) cmd &amp;lt;- sprintf(&amp;quot;dpkg -i %s&amp;quot;, destfile) system(cmd) </description>
     </item>
     
@@ -79,16 +79,6 @@ c(&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;) %in% letters[1:5] ## [1] TRUE TR
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/post/2015-11-13-r-101/</guid>
       <description>Sometimes when you open a data file (lets say a .csv), variables will be recognized as factor whereas it should be numeric. It is therefore tempting to simply convert the variable to numeric using as.numeric(). Big mistake! If you use directly as.numeric() on a variable of the type factor, R will returns the levels of the factor rather the actual values. To overcome this hassle, you should first convert the variable into a string with as.</description>
-    </item>
-    
-    <item>
-      <title>Visualizating olympics medals in R</title>
-      <link>/post/2016-08-25-olympics2016/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
-      <guid>/post/2016-08-25-olympics2016/</guid>
-      <description>Recently I have been more interested to perform web scraping to extract public data to perform data analysis. There are probably many R packages out there that do a good job at such task, but I found out that the rvest was among the most popular ones. Hence I decided to give it a try.
-In this post, I’m using the rvest library to visualize how many medals were obtained by each country during the summer Olympics 2016.</description>
     </item>
     
     <item>

@@ -80,6 +80,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Publications"
     url = "page/publication/"
     weight = 3
+    
+    
+[[menu.main]]
+    name = "Presentations"
+    url = "page/presentations/"
+    weight = 3
 
 [[menu.main]]
     name = "Tags"
