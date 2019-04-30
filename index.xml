@@ -77,7 +77,7 @@ rstudio_ubuntu_daily_url &amp;lt;- &amp;quot;https://www.rstudio.org/download/da
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/post/2015-11-05-eemr/</guid>
       <description>The eemR package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from this package start with the eem_ prefix. Please note this is a very alpha version of the package for testing purpose only.
-library(eemR) ls(&amp;quot;package:eemR&amp;quot;) ## [1] &amp;quot;absorbance&amp;quot; &amp;quot;eem_bind&amp;quot; ## [3] &amp;quot;eem_biological_index&amp;quot; &amp;quot;eem_coble_peaks&amp;quot; ## [5] &amp;quot;eem_cut&amp;quot; &amp;quot;eem_export_matlab&amp;quot; ## [7] &amp;quot;eem_extract&amp;quot; &amp;quot;eem_fluorescence_index&amp;quot; ## [9] &amp;quot;eem_humification_index&amp;quot; &amp;quot;eem_inner_filter_effect&amp;quot; ## [11] &amp;quot;eem_names&amp;quot; &amp;quot;eem_names&amp;lt;-&amp;quot; ## [13] &amp;quot;eem_peaks&amp;quot; &amp;quot;eem_raman_normalisation&amp;quot; ## [15] &amp;quot;eem_read&amp;quot; &amp;quot;eem_remove_blank&amp;quot; ## [17] &amp;quot;eem_remove_scattering&amp;quot; &amp;quot;eem_set_wavelengths&amp;quot; The package can be installed using the following command.</description>
+library(eemR) ## Registered S3 methods overwritten by &amp;#39;ggplot2&amp;#39;: ## method from ## [.quosures rlang ## c.quosures rlang ## print.quosures rlang ls(&amp;quot;package:eemR&amp;quot;) ## [1] &amp;quot;absorbance&amp;quot; &amp;quot;eem_bind&amp;quot; ## [3] &amp;quot;eem_biological_index&amp;quot; &amp;quot;eem_coble_peaks&amp;quot; ## [5] &amp;quot;eem_cut&amp;quot; &amp;quot;eem_export_matlab&amp;quot; ## [7] &amp;quot;eem_extract&amp;quot; &amp;quot;eem_fluorescence_index&amp;quot; ## [9] &amp;quot;eem_humification_index&amp;quot; &amp;quot;eem_inner_filter_effect&amp;quot; ## [11] &amp;quot;eem_names&amp;quot; &amp;quot;eem_names&amp;lt;-&amp;quot; ## [13] &amp;quot;eem_raman_normalisation&amp;quot; &amp;quot;eem_read&amp;quot; ## [15] &amp;quot;eem_remove_blank&amp;quot; &amp;quot;eem_remove_scattering&amp;quot; ## [17] &amp;quot;eem_set_wavelengths&amp;quot; The package can be installed using the following command.</description>
     </item>
     
     <item>
@@ -86,10 +86,12 @@ library(eemR) ls(&amp;quot;package:eemR&amp;quot;) ## [1] &amp;quot;absorbance&a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
       <guid>/page/presentations/</guid>
-      <description> List of my most recent presentations 2019  R à Québec 2019
- Green Edge 2019
- Numerical ecology (course in Denmark)
-  </description>
+      <description>2019 R à Québec Présentation sur la programmation fonctionnelle avec R lors du symposium R à Québec 2019.
+Link: http://www.pmassicotte.com/rquebec2019
+Green Edge side meeting Green Edge side meeting in Italia after the Gorodn conference.
+Link: http://www.pmassicotte.com/greenedge2019/
+Numerical ecology Numerical ecology in R teaching material used at Aarhus university in March 2019.
+Link: http://www.pmassicotte.com/stats-denmark-2019/</description>
     </item>
     
     <item>

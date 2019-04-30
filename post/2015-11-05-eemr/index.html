@@ -11,9 +11,9 @@
   <meta property="og:title" content="Introducing eemR" />
   <meta name="twitter:title" content="Introducing eemR" />
   <meta name="description" content="The eemR package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from this package start with the eem_ prefix. Please note this is a very alpha version of the package for testing purpose only.
-library(eemR) ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;eem_bind&quot; ## [3] &quot;eem_biological_index&quot; &quot;eem_coble_peaks&quot; ## [5] &quot;eem_cut&quot; &quot;eem_export_matlab&quot; ## [7] &quot;eem_extract&quot; &quot;eem_fluorescence_index&quot; ## [9] &quot;eem_humification_index&quot; &quot;eem_inner_filter_effect&quot; ## [11] &quot;eem_names&quot; &quot;eem_names&lt;-&quot; ## [13] &quot;eem_peaks&quot; &quot;eem_raman_normalisation&quot; ## [15] &quot;eem_read&quot; &quot;eem_remove_blank&quot; ## [17] &quot;eem_remove_scattering&quot; &quot;eem_set_wavelengths&quot; The package can be installed using the following command.">
+library(eemR) ## Registered S3 methods overwritten by &#39;ggplot2&#39;: ## method from ## [.quosures rlang ## c.quosures rlang ## print.quosures rlang ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;eem_bind&quot; ## [3] &quot;eem_biological_index&quot; &quot;eem_coble_peaks&quot; ## [5] &quot;eem_cut&quot; &quot;eem_export_matlab&quot; ## [7] &quot;eem_extract&quot; &quot;eem_fluorescence_index&quot; ## [9] &quot;eem_humification_index&quot; &quot;eem_inner_filter_effect&quot; ## [11] &quot;eem_names&quot; &quot;eem_names&lt;-&quot; ## [13] &quot;eem_raman_normalisation&quot; &quot;eem_read&quot; ## [15] &quot;eem_remove_blank&quot; &quot;eem_remove_scattering&quot; ## [17] &quot;eem_set_wavelengths&quot; The package can be installed using the following command.">
   <meta property="og:description" content="The eemR package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from this package start with the eem_ prefix. Please note this is a very alpha version of the package for testing purpose only.
-library(eemR) ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;eem_bind&quot; ## [3] &quot;eem_biological_index&quot; &quot;eem_coble_peaks&quot; ## [5] &quot;eem_cut&quot; &quot;eem_export_matlab&quot; ## [7] &quot;eem_extract&quot; &quot;eem_fluorescence_index&quot; ## [9] &quot;eem_humification_index&quot; &quot;eem_inner_filter_effect&quot; ## [11] &quot;eem_names&quot; &quot;eem_names&lt;-&quot; ## [13] &quot;eem_peaks&quot; &quot;eem_raman_normalisation&quot; ## [15] &quot;eem_read&quot; &quot;eem_remove_blank&quot; ## [17] &quot;eem_remove_scattering&quot; &quot;eem_set_wavelengths&quot; The package can be installed using the following command.">
+library(eemR) ## Registered S3 methods overwritten by &#39;ggplot2&#39;: ## method from ## [.quosures rlang ## c.quosures rlang ## print.quosures rlang ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;eem_bind&quot; ## [3] &quot;eem_biological_index&quot; &quot;eem_coble_peaks&quot; ## [5] &quot;eem_cut&quot; &quot;eem_export_matlab&quot; ## [7] &quot;eem_extract&quot; &quot;eem_fluorescence_index&quot; ## [9] &quot;eem_humification_index&quot; &quot;eem_inner_filter_effect&quot; ## [11] &quot;eem_names&quot; &quot;eem_names&lt;-&quot; ## [13] &quot;eem_raman_normalisation&quot; &quot;eem_read&quot; ## [15] &quot;eem_remove_blank&quot; &quot;eem_remove_scattering&quot; ## [17] &quot;eem_set_wavelengths&quot; The package can be installed using the following command.">
   <meta name="twitter:description" content="The eemR package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from …">
   <meta name="author" content="Philippe Massicotte"/><script type="application/ld+json">
 {
@@ -63,9 +63,9 @@ library(eemR) ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;e
     "name" : "Philippe Massicotte"
   },
   "headline": "Introducing eemR",
-  "description" : "The eemR package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from this package start with the eem_ prefix. Please note this is a very alpha version of the package for testing purpose only.\nlibrary(eemR) ls(\x26quot;package:eemR\x26quot;) ## [1] \x26quot;absorbance\x26quot; \x26quot;eem_bind\x26quot; ## [3] \x26quot;eem_biological_index\x26quot; \x26quot;eem_coble_peaks\x26quot; ## [5] \x26quot;eem_cut\x26quot; \x26quot;eem_export_matlab\x26quot; ## [7] \x26quot;eem_extract\x26quot; \x26quot;eem_fluorescence_index\x26quot; ## [9] \x26quot;eem_humification_index\x26quot; \x26quot;eem_inner_filter_effect\x26quot; ## [11] \x26quot;eem_names\x26quot; \x26quot;eem_names\x26lt;-\x26quot; ## [13] \x26quot;eem_peaks\x26quot; \x26quot;eem_raman_normalisation\x26quot; ## [15] \x26quot;eem_read\x26quot; \x26quot;eem_remove_blank\x26quot; ## [17] \x26quot;eem_remove_scattering\x26quot; \x26quot;eem_set_wavelengths\x26quot; The package can be installed using the following command.",
+  "description" : "The eemR package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from this package start with the eem_ prefix. Please note this is a very alpha version of the package for testing purpose only.\nlibrary(eemR) ## Registered S3 methods overwritten by \x26#39;ggplot2\x26#39;: ## method from ## [.quosures rlang ## c.quosures rlang ## print.quosures rlang ls(\x26quot;package:eemR\x26quot;) ## [1] \x26quot;absorbance\x26quot; \x26quot;eem_bind\x26quot; ## [3] \x26quot;eem_biological_index\x26quot; \x26quot;eem_coble_peaks\x26quot; ## [5] \x26quot;eem_cut\x26quot; \x26quot;eem_export_matlab\x26quot; ## [7] \x26quot;eem_extract\x26quot; \x26quot;eem_fluorescence_index\x26quot; ## [9] \x26quot;eem_humification_index\x26quot; \x26quot;eem_inner_filter_effect\x26quot; ## [11] \x26quot;eem_names\x26quot; \x26quot;eem_names\x26lt;-\x26quot; ## [13] \x26quot;eem_raman_normalisation\x26quot; \x26quot;eem_read\x26quot; ## [15] \x26quot;eem_remove_blank\x26quot; \x26quot;eem_remove_scattering\x26quot; ## [17] \x26quot;eem_set_wavelengths\x26quot; The package can be installed using the following command.",
   "inLanguage" : "en",
-  "wordCount":  612 ,
+  "wordCount":  643 ,
   "datePublished" : "0001-01-01T00:00:00",
   "dateModified" : "0001-01-01T00:00:00",
   "image" : "\/img\/avatar-icon.png",
@@ -86,7 +86,7 @@ library(eemR) ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;e
 
 <meta property="og:title" content="Introducing eemR" />
 <meta property="og:description" content="The eemR package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from this package start with the eem_ prefix. Please note this is a very alpha version of the package for testing purpose only.
-library(eemR) ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;eem_bind&quot; ## [3] &quot;eem_biological_index&quot; &quot;eem_coble_peaks&quot; ## [5] &quot;eem_cut&quot; &quot;eem_export_matlab&quot; ## [7] &quot;eem_extract&quot; &quot;eem_fluorescence_index&quot; ## [9] &quot;eem_humification_index&quot; &quot;eem_inner_filter_effect&quot; ## [11] &quot;eem_names&quot; &quot;eem_names&lt;-&quot; ## [13] &quot;eem_peaks&quot; &quot;eem_raman_normalisation&quot; ## [15] &quot;eem_read&quot; &quot;eem_remove_blank&quot; ## [17] &quot;eem_remove_scattering&quot; &quot;eem_set_wavelengths&quot; The package can be installed using the following command.">
+library(eemR) ## Registered S3 methods overwritten by &#39;ggplot2&#39;: ## method from ## [.quosures rlang ## c.quosures rlang ## print.quosures rlang ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;eem_bind&quot; ## [3] &quot;eem_biological_index&quot; &quot;eem_coble_peaks&quot; ## [5] &quot;eem_cut&quot; &quot;eem_export_matlab&quot; ## [7] &quot;eem_extract&quot; &quot;eem_fluorescence_index&quot; ## [9] &quot;eem_humification_index&quot; &quot;eem_inner_filter_effect&quot; ## [11] &quot;eem_names&quot; &quot;eem_names&lt;-&quot; ## [13] &quot;eem_raman_normalisation&quot; &quot;eem_read&quot; ## [15] &quot;eem_remove_blank&quot; &quot;eem_remove_scattering&quot; ## [17] &quot;eem_set_wavelengths&quot; The package can be installed using the following command.">
 <meta property="og:image" content="/img/avatar-icon.png" />
 <meta property="og:url" content="/post/2015-11-05-eemr/" />
 <meta property="og:type" content="website" />
@@ -266,7 +266,7 @@ library(eemR) ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;e
   <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
   
   
   
@@ -294,17 +294,22 @@ library(eemR) ls(&quot;package:eemR&quot;) ## [1] &quot;absorbance&quot; &quot;e
 
 
 <p>The <a href="https://github.com/PMassicotte/eemR"><code>eemR</code></a> package implements various functions used calculate metrics from excitation-emission matrix (EEM) as well as to preform pre-processing corrections before PARAFAC analysis. All functions from this package start with the <code>eem_</code> prefix. Please note this is a very alpha version of the package for testing purpose only.</p>
-<pre class="r"><code>library(eemR)
-ls(&quot;package:eemR&quot;)</code></pre>
+<pre class="r"><code>library(eemR)</code></pre>
+<pre><code>## Registered S3 methods overwritten by &#39;ggplot2&#39;:
+##   method         from 
+##   [.quosures     rlang
+##   c.quosures     rlang
+##   print.quosures rlang</code></pre>
+<pre class="r"><code>ls(&quot;package:eemR&quot;)</code></pre>
 <pre><code>##  [1] &quot;absorbance&quot;              &quot;eem_bind&quot;               
 ##  [3] &quot;eem_biological_index&quot;    &quot;eem_coble_peaks&quot;        
 ##  [5] &quot;eem_cut&quot;                 &quot;eem_export_matlab&quot;      
 ##  [7] &quot;eem_extract&quot;             &quot;eem_fluorescence_index&quot; 
 ##  [9] &quot;eem_humification_index&quot;  &quot;eem_inner_filter_effect&quot;
 ## [11] &quot;eem_names&quot;               &quot;eem_names&lt;-&quot;            
-## [13] &quot;eem_peaks&quot;               &quot;eem_raman_normalisation&quot;
-## [15] &quot;eem_read&quot;                &quot;eem_remove_blank&quot;       
-## [17] &quot;eem_remove_scattering&quot;   &quot;eem_set_wavelengths&quot;</code></pre>
+## [13] &quot;eem_raman_normalisation&quot; &quot;eem_read&quot;               
+## [15] &quot;eem_remove_blank&quot;        &quot;eem_remove_scattering&quot;  
+## [17] &quot;eem_set_wavelengths&quot;</code></pre>
 <p>The package can be installed using the following command.</p>
 <pre class="r"><code>devtools::install_github(&quot;PMassicotte/eemR&quot;)</code></pre>
 <div id="reading-excitation-emission" class="section level2">
@@ -425,7 +430,10 @@ eem &lt;- eem_read(folder)
 filename &lt;- paste(tempfile(), &quot;.mat&quot;, sep = &quot;&quot;)
 
 eem_export_matlab(filename, eem)</code></pre>
-<pre><code>## Successfully exported 4 EEMs to /tmp/Rtmp9oTyP3/file74e375317dbb.mat.</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;R.oo&#39;:
+##   method        from       
+##   throw.default R.methodsS3</code></pre>
+<pre><code>## Successfully exported 4 EEMs to /tmp/RtmpAadMoN/file65f61df56be0.mat.</code></pre>
 <p>Note that the name of the structure generated by the function will be <code>OriginalData</code> to <em>complement</em> with PARAFAC standard. Then, the importation into Matlab is made easy using the <code>load()</code> function.</p>
 <pre class="matlab"><code>load(&#39;FileName.mat&#39;);</code></pre>
 </div>
