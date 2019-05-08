@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pmassicotte@hotmail.com (Philippe Massicotte)</managingEditor>
     <webMaster>pmassicotte@hotmail.com (Philippe Massicotte)</webMaster>
-    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introducing gitignore</title>
+      <link>/post/2019-05-08-introducing-gitignore/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
+      <guid>/post/2019-05-08-introducing-gitignore/</guid>
+      <description>In this post I will introduce the gitignore R package (https://github.com/PMassicotte/gitignore).
+Basic idea gitignore is a simple R package that provide an interface to query gitignore.io to fetch gitignore templates that can be included in the .gitignore file. More than 450 templates are currently available. There are actually two functions in the package:
+ gi_fetch_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_ignore_templates(): to get one or more template(s).</description>
+    </item>
     
     <item>
       <title>Analysis of speaker genders at the 2018 ArcticNet Annual Scientific Meeting</title>

@@ -52,7 +52,7 @@ Then, using the `gender` package, we can determine the genders.
 library(gender)
 
 res <- res %>% 
-  nest() %>%
+  nest(c(first_name, last_name)) %>%
   mutate(gender = map(data, ~ gender(.$first_name))) %>%
   unnest(gender) %>%
   mutate(gender = str_to_title(gender))
