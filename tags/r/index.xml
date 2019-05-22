@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pmassicotte@hotmail.com (Philippe Massicotte)</managingEditor>
     <webMaster>pmassicotte@hotmail.com (Philippe Massicotte)</webMaster>
-    <lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extracting Weather Data From Canadian Archive</title>
+      <link>/post/2019-05-22-extracting-weather-data-from-canadian-archive/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      <author>pmassicotte@hotmail.com (Philippe Massicotte)</author>
+      <guid>/post/2019-05-22-extracting-weather-data-from-canadian-archive/</guid>
+      <description>To me, spring 2019 seems cooler than the last year spring. I wanted to plot daily temperature data for my city. I know that the Government of Canada have such data. The following code was used to extract daily mean temperature for springs 2018 and 2019.
+library(extrafont) library(tidyverse) library(glue) ## Set default ggplot2 font size and font familly loadfonts(quiet = TRUE) theme_set(theme_bw(base_size = 12, base_family = &amp;quot;Poppins&amp;quot;)) The first thing I did was to create a tibble with all the dates for which I wanted to extract the weather information.</description>
+    </item>
     
     <item>
       <title>Introducing gitignore</title>
