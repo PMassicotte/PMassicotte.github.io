@@ -32,7 +32,7 @@ output: github_document
 
 folder &lt;- system.file(&quot;extdata/cary/scans_day_1/&quot;, package = &quot;eemR&quot;)
 
-eems &lt;- eem_read(folder, recursive = TRUE) %&gt;%
+eems &lt;- eem_read(folder, recursive = TRUE, import_function = &quot;cary&quot;) %&gt;%
   eem_raman_normalisation() %&gt;%
   eem_remove_scattering(type = &quot;raman&quot;, order = 1) %&gt;%
   eem_remove_scattering(type = &quot;rayleigh&quot;, order = 1)</code></pre>

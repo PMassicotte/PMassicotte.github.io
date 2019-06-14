@@ -28,7 +28,7 @@ library(magrittr)
 
 folder <- system.file("extdata/cary/scans_day_1/", package = "eemR")
 
-eems <- eem_read(folder, recursive = TRUE) %>%
+eems <- eem_read(folder, recursive = TRUE, import_function = "cary") %>%
   eem_raman_normalisation() %>%
   eem_remove_scattering(type = "raman", order = 1) %>%
   eem_remove_scattering(type = "rayleigh", order = 1)

@@ -30,7 +30,7 @@ library(eemR)
 
 ## Reading a single eem
 file <- system.file("extdata/cary/scans_day_1", "sample1.csv", package = "eemR")
-eem <- eem_read(file)
+eem <- eem_read(file, import_function = "cary")
 
 plot(eem)
 
@@ -53,7 +53,7 @@ The current implemented metrics are:
 library(eemR)
 
 folder <- system.file("extdata/cary/scans_day_1", package = "eemR")
-eem <- eem_read(folder)
+eem <- eem_read(folder, import_function = "cary")
 
 eem_fluorescence_index(eem)
 
@@ -84,7 +84,7 @@ The `eem_remove_scattering()` function removes both Raman and Rayleigh scatterin
 ```{r, out.width='300cm', out.height='250cm', fig.show='hold'}
 
 file <- system.file("extdata/cary/scans_day_1", "sample1.csv", package = "eemR")
-eem <- eem_read(file)
+eem <- eem_read(file, import_function = "cary")
 
 res <- eem_remove_scattering(eem = eem, type = "raman", order = 1, width = 10)
 res <- eem_remove_scattering(eem = res, type = "rayleigh", order = 1, width = 10)
@@ -101,7 +101,7 @@ The `eem_remove_blank()` function subtract blank (miliq) water from eem. Scatter
 ```{r}
 
 file <- system.file("extdata/cary/scans_day_1", "nano.csv", package = "eemR")
-blank <- eem_read(file)
+blank <- eem_read(file, import_function = "cary")
 
 res <- eem_remove_blank(res, blank)
 
@@ -138,7 +138,7 @@ PARAFAC analysis was made easy with the fantastic Matlab [`drEEM`](http://www.mo
 
 ```{r}
 folder <- system.file("extdata/cary/scans_day_1", package = "eemR")
-eem <- eem_read(folder)
+eem <- eem_read(folder, import_function = "cary")
 
 filename <- paste(tempfile(), ".mat", sep = "")
 
