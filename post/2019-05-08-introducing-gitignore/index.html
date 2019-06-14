@@ -12,10 +12,10 @@
   <meta name="twitter:title" content="Introducing gitignore" />
   <meta name="description" content="In this post I will introduce the gitignore R package (https://github.com/PMassicotte/gitignore).
 Basic idea gitignore is a simple R package that provide an interface to query gitignore.io to fetch gitignore templates that can be included in the .gitignore file. More than 450 templates are currently available. There are actually two functions in the package:
- gi_fetch_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_ignore_templates(): to get one or more template(s).">
+ gi_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_templates(): to get one or more template(s).">
   <meta property="og:description" content="In this post I will introduce the gitignore R package (https://github.com/PMassicotte/gitignore).
 Basic idea gitignore is a simple R package that provide an interface to query gitignore.io to fetch gitignore templates that can be included in the .gitignore file. More than 450 templates are currently available. There are actually two functions in the package:
- gi_fetch_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_ignore_templates(): to get one or more template(s).">
+ gi_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_templates(): to get one or more template(s).">
   <meta name="twitter:description" content="In this post I will introduce the gitignore R package (https://github.com/PMassicotte/gitignore).
 Basic idea gitignore is a simple R package that provide an interface to query gitignore.io to fetch …">
   <meta name="author" content="Philippe Massicotte"/><script type="application/ld+json">
@@ -66,9 +66,9 @@ Basic idea gitignore is a simple R package that provide an interface to query gi
     "name" : "Philippe Massicotte"
   },
   "headline": "Introducing gitignore",
-  "description" : "In this post I will introduce the gitignore R package (https:\/\/github.com\/PMassicotte\/gitignore).\nBasic idea gitignore is a simple R package that provide an interface to query gitignore.io to fetch gitignore templates that can be included in the .gitignore file. More than 450 templates are currently available. There are actually two functions in the package:\n gi_fetch_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_ignore_templates(): to get one or more template(s).",
+  "description" : "In this post I will introduce the gitignore R package (https:\/\/github.com\/PMassicotte\/gitignore).\nBasic idea gitignore is a simple R package that provide an interface to query gitignore.io to fetch gitignore templates that can be included in the .gitignore file. More than 450 templates are currently available. There are actually two functions in the package:\n gi_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_templates(): to get one or more template(s).",
   "inLanguage" : "en",
-  "wordCount":  264 ,
+  "wordCount":  442 ,
   "datePublished" : "2019-05-08T00:00:00",
   "dateModified" : "2019-05-08T00:00:00",
   "image" : "\/img\/avatar-icon.png",
@@ -90,7 +90,7 @@ Basic idea gitignore is a simple R package that provide an interface to query gi
 <meta property="og:title" content="Introducing gitignore" />
 <meta property="og:description" content="In this post I will introduce the gitignore R package (https://github.com/PMassicotte/gitignore).
 Basic idea gitignore is a simple R package that provide an interface to query gitignore.io to fetch gitignore templates that can be included in the .gitignore file. More than 450 templates are currently available. There are actually two functions in the package:
- gi_fetch_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_ignore_templates(): to get one or more template(s).">
+ gi_available_templates(): to get a list of all templates available on gitignore.io. gi_fetch_templates(): to get one or more template(s).">
 <meta property="og:image" content="/img/avatar-icon.png" />
 <meta property="og:url" content="/post/2019-05-08-introducing-gitignore/" />
 <meta property="og:type" content="website" />
@@ -271,7 +271,7 @@ Basic idea gitignore is a simple R package that provide an interface to query gi
   <i class="fas fa-calendar"></i>&nbsp;Posted on May 8, 2019
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
   
   
   
@@ -303,18 +303,18 @@ Basic idea gitignore is a simple R package that provide an interface to query gi
 <h2>Basic idea</h2>
 <p><code>gitignore</code> is a simple R package that provide an interface to query <a href="gitignore.io">gitignore.io</a> to fetch gitignore templates that can be included in the .gitignore file. More than 450 templates are currently available. There are actually two functions in the package:</p>
 <ul>
-<li><code>gi_fetch_available_templates()</code>: to get a list of all templates available on <a href="gitignore.io">gitignore.io</a>.</li>
-<li><code>gi_fetch_ignore_templates()</code>: to get one or more template(s). This function can copy the returned template(s) in the clipboard as well as happening the the <code>.gitignore</code> file in your project directory.</li>
+<li><code>gi_available_templates()</code>: to get a list of all templates available on <a href="gitignore.io">gitignore.io</a>.</li>
+<li><code>gi_fetch_templates()</code>: to get one or more template(s). This function can copy the returned template(s) in the clipboard as well as happening the the <code>.gitignore</code> file in your project directory.</li>
 </ul>
 </div>
 <div id="examples" class="section level2">
 <h2>Examples</h2>
 <pre class="r"><code>library(gitignore)</code></pre>
 <p>Get the list of all available templates from <a href="gitignore.io">gitignore.io</a>:</p>
-<pre class="r"><code>head(gi_fetch_available_templates(), 50)</code></pre>
-<pre><code>##  [1] &quot;1c&quot;                   &quot;1c-bitrix&quot;            &quot;a-frame&quot;             
-##  [4] &quot;actionscript&quot;         &quot;ada&quot;                  &quot;adobe&quot;               
-##  [7] &quot;advancedinstaller&quot;    &quot;agda&quot;                 &quot;al&quot;                  
+<pre class="r"><code>head(gi_available_templates(), 50)</code></pre>
+<pre><code>##  [1] &quot;1c&quot;                   &quot;1c-bitrix&quot;            &quot;actionscript&quot;        
+##  [4] &quot;ada&quot;                  &quot;adobe&quot;                &quot;advancedinstaller&quot;   
+##  [7] &quot;a-frame&quot;              &quot;agda&quot;                 &quot;al&quot;                  
 ## [10] &quot;alteraquartusii&quot;      &quot;altium&quot;               &quot;android&quot;             
 ## [13] &quot;androidstudio&quot;        &quot;angular&quot;              &quot;anjuta&quot;              
 ## [16] &quot;ansible&quot;              &quot;apachecordova&quot;        &quot;apachehadoop&quot;        
@@ -329,12 +329,77 @@ Basic idea gitignore is a simple R package that provide an interface to query gi
 ## [43] &quot;batch&quot;                &quot;bazaar&quot;               &quot;bazel&quot;               
 ## [46] &quot;bitrise&quot;              &quot;bitrix&quot;               &quot;bittorrent&quot;          
 ## [49] &quot;blackbox&quot;             &quot;bloop&quot;</code></pre>
-<p>The function <code>gi_fetch_ignore_templates()</code> can be used to fetch particular template(s). For example, one could want to get the <code>java</code> and <code>c++</code> templates as follow:</p>
-<pre class="r"><code>gi_fetch_ignore_templates(c(&quot;java&quot;, &quot;c++&quot;))</code></pre>
+<p>The function <code>gi_fetch_templates()</code> can be used to fetch particular template(s). For example, one could want to get the <code>java</code> and <code>c++</code> templates as follow:</p>
+<pre class="r"><code>gi_fetch_templates(c(&quot;java&quot;, &quot;c++&quot;))</code></pre>
+<pre><code>## ● Copied to the clipboard. You can now paste it in your .gitignore file.</code></pre>
 <p>By default, the template(s) are copied into the clipboard, this can be changed by setting <code>copy_to_clipboard = FALSE</code>:</p>
-<pre class="r"><code>gi_fetch_ignore_templates(c(&quot;java&quot;, &quot;c++&quot;), copy_to_clipboard = FALSE)</code></pre>
-<p>Additionally, you can tell <code>gi_fetch_ignore_templates()</code> to append automatically the <code>.gitignore</code> file in your project by setting <code>append_gitignore = TRUE</code>:</p>
-<pre class="r"><code>gi_fetch_ignore_templates(c(&quot;java&quot;, &quot;c++&quot;), append_gitignore = TRUE)</code></pre>
+<pre class="r"><code>gi_fetch_templates(c(&quot;java&quot;, &quot;c++&quot;), copy_to_clipboard = FALSE)</code></pre>
+<pre><code>## 
+## # Created by https://www.gitignore.io/api/java,c++
+## # Edit at https://www.gitignore.io/?templates=java,c++
+## 
+## ### C++ ###
+## # Prerequisites
+## *.d
+## 
+## # Compiled Object files
+## *.slo
+## *.lo
+## *.o
+## *.obj
+## 
+## # Precompiled Headers
+## *.gch
+## *.pch
+## 
+## # Compiled Dynamic libraries
+## *.so
+## *.dylib
+## *.dll
+## 
+## # Fortran module files
+## *.mod
+## *.smod
+## 
+## # Compiled Static libraries
+## *.lai
+## *.la
+## *.a
+## *.lib
+## 
+## # Executables
+## *.exe
+## *.out
+## *.app
+## 
+## ### Java ###
+## # Compiled class file
+## *.class
+## 
+## # Log file
+## *.log
+## 
+## # BlueJ files
+## *.ctxt
+## 
+## # Mobile Tools for Java (J2ME)
+## .mtj.tmp/
+## 
+## # Package Files #
+## *.jar
+## *.war
+## *.nar
+## *.ear
+## *.zip
+## *.tar.gz
+## *.rar
+## 
+## # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+## hs_err_pid*
+## 
+## # End of https://www.gitignore.io/api/java,c++</code></pre>
+<p>Additionally, you can tell <code>gi_fetch_templates()</code> to append automatically the <code>.gitignore</code> file in your project by setting <code>append_gitignore = TRUE</code>:</p>
+<pre class="r"><code>gi_fetch_templates(c(&quot;java&quot;, &quot;c++&quot;), append_gitignore = TRUE)</code></pre>
 </div>
 <div id="demo" class="section level2">
 <h2>Demo</h2>
