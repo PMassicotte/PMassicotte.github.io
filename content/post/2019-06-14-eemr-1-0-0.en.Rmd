@@ -52,9 +52,6 @@ Further more, the `x` matrix of the list need to be arranged as follow:
 Let's now write a function that will read the eem file and format the data accordingly. In this particular example, fluorescence has been measured in asynchronous mode. Hence, extra manipulations are needed to get the data on a regular grid.
 
 ```{r, message=FALSE}
-
-getwd()
-
 library(dplyr)
 library(tidyr)
 library(eemR)

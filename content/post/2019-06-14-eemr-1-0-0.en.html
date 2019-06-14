@@ -48,8 +48,6 @@ cat(readLines(file, n = 5), sep = &quot;\n&quot;)</code></pre>
 <p>Further more, the <code>x</code> matrix of the list need to be arranged as follow:</p>
 <p><img src="/post/2019-06-14-eemr-1-0-0.en_files/matrix.png" /></p>
 <p>Let’s now write a function that will read the eem file and format the data accordingly. In this particular example, fluorescence has been measured in asynchronous mode. Hence, extra manipulations are needed to get the data on a regular grid.</p>
-<pre class="r"><code>getwd()</code></pre>
-<pre><code>## [1] &quot;/media/work/blog/content/post&quot;</code></pre>
 <pre class="r"><code>library(dplyr)
 library(tidyr)
 library(eemR)
